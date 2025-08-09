@@ -81,7 +81,7 @@ export default function Input({
                     value={value}
                     onChange={onChange}
                     required={required}
-                    className="border rounded px-2 py-1"
+                    className="border rounded   px-2 py-1"
                 >
                     <option value="">-- Select an option --</option>
                     {options.map((opt) => (

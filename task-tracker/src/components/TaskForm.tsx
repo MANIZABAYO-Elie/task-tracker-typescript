@@ -79,8 +79,8 @@ export default function TaskForm({ onAdd }: { onAdd: (task: Task) => void }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4 bg-white p-4 rounded shadow-md">
-      <Input id="1" label="Task Name" name="taskName" value={formData.taskName} onChange={handleChange} />
+    <form onSubmit={handleSubmit} className="space-y-4 bg-white p-4 rounded shadow-md flex flex-col justify-center items-center">
+      <Input id="1" label="Task Name" name="taskName" value={formData.taskName} onChange={handleChange} /> 
       <Input id="2" label="Priority" name="priority" value={formData.priority} onChange={handleChange} options={['Low', 'Medium', 'High']} />
       <Input id="3" label="Category" name="category" value={formData.category} onChange={handleChange} options={['Frontend', 'Backend', 'Meeting', 'Design']} />
       <Input id="4" label="Due Date" name="dueDate" value={formData.dueDate} onChange={handleChange} type="date" />
